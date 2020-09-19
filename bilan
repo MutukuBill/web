@@ -1,0 +1,139 @@
+<!DOCTYPEHTML>
+<html>
+<head><title>Bilan</title>
+<meta name="viewport"
+content="width=device,initial-scale=1">
+<link rel="stylesheet"type="text/css"href="newbilancss.css"/>
+</head>
+<body>
+<div id="header"style ="width:1140px;text-align:left;background-color:dodgerBlue;color:white;">
+<h1 style="color:black;text-align:center;">Ab's  photogaphy</h1>
+<div id ="mySidenav"
+class="sidenav">
+<a href="javascript:void(0)"
+class="closebtn"
+onclick="closenav()">&times;</a>
+<a href ="#">about Ab's</a>
+<a href="#">services</a>
+<a href="#">contact</a>
+<a  href="#">clients</a>
+</div>
+
+<!-- use any element to open the side nav-->
+<span  style="font-size:30px;cursor:pointer"
+onclick="openNav()">&#9776;</span>
+<div id="body" style="background-color:black;height:515px;width:1140px;color:white;text-align:center;content">
+content in here <br/>
+<h1>Ab's photography main page</h1> 
+<div id="table"style="width:500px;height:300px;background-color:dodgerBlue;text-align:center;">
+
+<p>
+Please feed in your details
+</p>
+<form name="input"action="html_form_action.asp"method ="get">
+
+
+First name:<input type="text"name="first name"/><br/>
+<br/>
+
+last name: <input type="text"name="last name"/><br/>
+<br/>
+
+password:<input type="password"name ="pwd"/><br/>
+
+gender:<input type="radio"name="sex"/>male<br/><br/>
+
+<input type="radio"name="sex"/>female<br/><br/>
+
+
+<input type = "submit"value="submit"/><br/>
+
+</form>
+
+</div>
+</div>
+<div id="footer"style="width:1140;color:dodgerBlue;background-color:purple;text-align:center;"><h2>copyright 2020 ab's photogaphy</h2>
+</div>
+<script>
+function openNav(){
+document.getElementById("mySidenav")
+.style.width="250px";
+}
+function closenav(){
+document.getElementById("mySidenav")
+.style.width="0";
+}
+</script>
+
+
+</body>
+</html>
+
+/*the side navigation menu*/
+.sidenav{
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color:black;
+	overflow-x:hidden;
+	padding-top:60px;
+	transition:0.5s;
+}
+
+/*the navigation menu links*/
+
+.sidenav a {
+	padding:8px 8px 8px 32px;
+	text-decoration:none;
+	font-size:25px;
+	display:block;
+	transition:0.3s;
+}
+
+/*when you mouse over the navigation links*/
+
+.sidenav a:hover{
+	color:#f1f1f1;
+}
+
+/*close button for navigation bar*/
+.sidenav.closebtn{
+	position:absolute;
+	top:0;
+	right:25px;
+	font-size:360px;
+	margin-left:50px;
+}
+/*pushing page content to the right*/
+#main{
+	transition:margin-left .5s;
+	padding:20px;
+}
+/*in smaller screens*/
+@media screen and (max-height:450px){
+	.sidenav{padding-top:15px;}
+	.sidenav a {font-size:18px;}
+}
+	
+	.table{
+		margin:500px;
+		width:360px:
+	}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
