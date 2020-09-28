@@ -1,0 +1,55 @@
+/*the side navigation menu*/
+.sidenav{
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color:black;
+	overflow-x:hidden;
+	padding-top:60px;
+	transition:0.5s;
+}
+
+/*the navigation menu links*/
+
+.sidenav a {
+	padding:8px 8px 8px 32px;
+	text-decoration:none;
+	font-size:25px;
+	display:block;
+	transition:0.3s;
+}
+
+/*when you mouse over the navigation links*/
+
+.sidenav a:hover{
+	color:#f1f1f1;
+}
+
+/*close button for navigation bar*/
+.sidenav.closebtn{
+	position:absolute;
+	top:0;
+	right:25px;
+	font-size:360px;
+	margin-left:50px;
+}
+/*pushing page content to the right*/
+#main{
+	transition:margin-left .5s;
+	padding:20px;
+}
+/*in smaller screens*/
+@media screen and (max-height:450px){
+	.sidenav{padding-top:15px;}
+	.sidenav a {font-size:18px;}
+}
+	
+	.table{
+		margin:500px;
+		width:360px:
+	}
+		
+	
